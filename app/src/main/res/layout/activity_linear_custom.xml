@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blueeleven.viewdrawdemo.linearlayout.view.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="50dp"
+  app:orientation="vertical">
+
+  <!--<View-->
+  <!--android:layout_width="wrap_content"-->
+  <!--android:layout_height="3000dp"-->
+  <!--android:background="@color/black" />-->
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="match width button" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/blue"
+    android:text="wrap width textview" />
+
+  <View
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/red" />
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="bottom button" />
+
+
+</com.blueeleven.viewdrawdemo.linearlayout.view.CustomLinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <Button
+    android:text="Test Paint1"
+    android:onClick="onClickTestPaint1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <Button
+    android:text="Test Paint2"
+    android:onClick="onClickTestPaint2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <Button
+    android:text="Clock View"
+    android:onClick="onClickDrawClock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <Button
+    android:text="Cobweb View"
+    android:onClick="onClickCobweb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

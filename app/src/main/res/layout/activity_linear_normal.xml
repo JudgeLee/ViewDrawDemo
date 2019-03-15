@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <com.blueeleven.viewdrawdemo.linearlayout.view.TestLinearLayout
+    android:id="@+id/ll_mm_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!--<View-->
+    <!--android:layout_width="2000dp"-->
+    <!--android:layout_height="2000dp"-->
+    <!--android:background="@color/black" />-->
+
+    <Button
+      android:id="@+id/btn_1"
+      android:layout_width="80dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="90dp"
+      android:layout_marginRight="90dp"
+      android:text="match width wrap height" />
+
+    <View
+      android:id="@+id/view_1"
+      android:layout_width="100dp"
+      android:layout_height="200dp"
+      android:layout_marginTop="60dp"
+      android:layout_marginBottom="30dp"
+      android:layout_gravity="center_vertical"
+      android:background="@color/red" />
+
+  </com.blueeleven.viewdrawdemo.linearlayout.view.TestLinearLayout>
+
+
+</LinearLayout>
