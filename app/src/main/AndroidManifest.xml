@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.blueeleven.viewdrawdemo">
+  package="com.judgelee.viewdrawdemo">
 
   <application
     android:allowBackup="true"
@@ -9,25 +9,25 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".MainActivity">
+    <activity android:name="com.judgelee.viewdrawdemo.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".linearlayout.TestLinearActivity" />
-    <activity android:name=".linearlayout.activity.TestCustomLinearActivity" />
-    <activity android:name=".NativeLinearLayoutActivity" />
-    <activity android:name=".linearlayout.activity.NormalLinearActivity" />
-    <activity android:name=".linearlayout.activity.WidthWrapLinearActivity" />
-    <activity android:name=".linearlayout.activity.WeightLinearActivity" />
-    <activity android:name=".draw.activity.PaintActivity1" />
-    <activity android:name=".draw.TestDrawActivity" />
-    <activity android:name=".draw.activity.ClockViewActivity" />
-    <activity android:name=".draw.activity.CobwebViewActivity" />
-    <activity android:name=".draw.activity.PathEffectActivity" />
-    <activity android:name=".draw.activity.PathActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.linearlayout.TestLinearActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.linearlayout.activity.TestCustomLinearActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.NativeLinearLayoutActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.linearlayout.activity.NormalLinearActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.linearlayout.activity.WidthWrapLinearActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.linearlayout.activity.WeightLinearActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.draw.activity.PaintActivity1" />
+    <activity android:name="com.judgelee.viewdrawdemo.draw.TestDrawActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.draw.activity.ClockViewActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.draw.activity.CobwebViewActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.draw.activity.PathEffectActivity" />
+    <activity android:name="com.judgelee.viewdrawdemo.draw.activity.PathActivity" />
   </application>
 
 </manifest>
