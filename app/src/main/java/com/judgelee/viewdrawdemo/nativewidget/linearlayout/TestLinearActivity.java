@@ -1,4 +1,4 @@
-package com.judgelee.viewdrawdemo.linearlayout;
+package com.judgelee.viewdrawdemo.nativewidget.linearlayout;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,10 +7,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.judgelee.viewdrawdemo.R;
-import com.judgelee.viewdrawdemo.linearlayout.activity.NormalLinearActivity;
-import com.judgelee.viewdrawdemo.linearlayout.activity.TestCustomLinearActivity;
-import com.judgelee.viewdrawdemo.linearlayout.activity.WeightLinearActivity;
-import com.judgelee.viewdrawdemo.linearlayout.activity.WidthWrapLinearActivity;
+import com.judgelee.viewdrawdemo.nativewidget.linearlayout.activity.NormalLinearActivity;
+import com.judgelee.viewdrawdemo.nativewidget.linearlayout.activity.TestCustomLinearActivity;
+import com.judgelee.viewdrawdemo.nativewidget.linearlayout.activity.WeightLinearActivity;
+import com.judgelee.viewdrawdemo.nativewidget.linearlayout.activity.WidthWrapLinearActivity;
 
 /**
  * Author: lijiajie

@@ -5,7 +5,7 @@
   android:layout_height="match_parent"
   android:orientation="vertical">
 
-  <com.judgelee.viewdrawdemo.linearlayout.view.CustomLinearLayout
+  <com.judgelee.viewdrawdemo.nativewidget.linearlayout.view.CustomLinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:gravity="center_vertical"
@@ -47,7 +47,7 @@
     <!--android:layout_height="wrap_content"-->
     <!--android:background="@color/purple" />-->
 
-  </com.judgelee.viewdrawdemo.linearlayout.view.CustomLinearLayout>
+  </com.judgelee.viewdrawdemo.nativewidget.linearlayout.view.CustomLinearLayout>
 
   <Button
     android:layout_width="match_parent"

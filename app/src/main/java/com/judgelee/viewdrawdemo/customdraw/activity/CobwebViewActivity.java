@@ -1,27 +1,27 @@
-package com.judgelee.viewdrawdemo.linearlayout.activity;
+package com.judgelee.viewdrawdemo.customdraw.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import com.judgelee.viewdrawdemo.R;
+import com.judgelee.viewdrawdemo.customdraw.view.CobwebView;
 
 /**
  * Author: lijiajie
- * Date: 2019/3/4
+ * Date: 2019/3/7
  * Desc:
  */
-public class WeightLinearActivity extends AppCompatActivity {
-  
+public class CobwebViewActivity extends AppCompatActivity {
+
   public static void start(Activity activity) {
-    Intent intent = new Intent(activity, WeightLinearActivity.class);
+    Intent intent = new Intent(activity, CobwebViewActivity.class);
     activity.startActivity(intent);
   }
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_linear_weight);
+    setContentView(new CobwebView(this, new int[]{0, 1, 4, 5}));
   }
 }

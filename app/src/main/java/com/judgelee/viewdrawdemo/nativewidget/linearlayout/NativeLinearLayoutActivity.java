@@ -1,4 +1,4 @@
-package com.judgelee.viewdrawdemo.linearlayout.activity;
+package com.judgelee.viewdrawdemo.nativewidget.linearlayout;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,16 +12,16 @@ import com.judgelee.viewdrawdemo.R;
  * Date: 2019/3/1
  * Desc:
  */
-public class TestCustomLinearActivity extends AppCompatActivity {
+public class NativeLinearLayoutActivity extends AppCompatActivity {
 
   public static void start(Activity activity) {
-    Intent intent = new Intent(activity, TestCustomLinearActivity.class);
+    Intent intent = new Intent(activity, NativeLinearLayoutActivity.class);
     activity.startActivity(intent);
   }
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_linear_custom_1);
+    setContentView(R.layout.activity_linear_native);
   }
 }

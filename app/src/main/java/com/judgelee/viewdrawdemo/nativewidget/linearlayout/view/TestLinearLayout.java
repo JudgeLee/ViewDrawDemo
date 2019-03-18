@@ -1,4 +1,4 @@
-package com.judgelee.viewdrawdemo.linearlayout.view;
+package com.judgelee.viewdrawdemo.nativewidget.linearlayout.view;
 
 import android.content.Context;
 import android.support.annotation.Nullable;

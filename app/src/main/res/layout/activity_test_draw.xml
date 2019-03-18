@@ -5,26 +5,40 @@
   android:orientation="vertical">
 
   <Button
-    android:text="Test Paint1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:onClick="onClickTestPaint1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:text="Test Paint1" />
 
   <Button
-    android:text="Test Paint2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:onClick="onClickTestPaint2"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:text="Test Paint2" />
+
 
   <Button
-    android:text="Clock View"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickTestPath"
+    android:text="Test Path" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickTestCanvas"
+    android:text="Test Canvas" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:onClick="onClickDrawClock"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:text="Clock View" />
 
   <Button
-    android:text="Cobweb View"
-    android:onClick="onClickCobweb"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+    android:onClick="onClickCobweb"
+    android:text="Cobweb View" />
+
 </LinearLayout>

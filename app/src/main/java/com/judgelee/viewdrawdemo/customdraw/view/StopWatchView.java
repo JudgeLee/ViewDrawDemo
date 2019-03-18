@@ -1,4 +1,4 @@
-package com.judgelee.viewdrawdemo.draw.view;
+package com.judgelee.viewdrawdemo.customdraw.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

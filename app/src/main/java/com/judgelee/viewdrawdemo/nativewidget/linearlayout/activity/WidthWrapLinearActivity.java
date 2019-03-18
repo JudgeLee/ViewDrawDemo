@@ -1,4 +1,4 @@
-package com.judgelee.viewdrawdemo.linearlayout.activity;
+package com.judgelee.viewdrawdemo.nativewidget.linearlayout.activity;
 
 import android.app.Activity;
 import android.content.Intent;

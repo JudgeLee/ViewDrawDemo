@@ -3,8 +3,9 @@ package com.judgelee.viewdrawdemo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import com.judgelee.viewdrawdemo.draw.TestDrawActivity;
-import com.judgelee.viewdrawdemo.linearlayout.TestLinearActivity;
+import com.judgelee.viewdrawdemo.customdraw.TestCustomDrawActivity;
+import com.judgelee.viewdrawdemo.nativewidget.linearlayout.NativeLinearLayoutActivity;
+import com.judgelee.viewdrawdemo.nativewidget.linearlayout.TestLinearActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +25,6 @@ public class MainActivity extends AppCompatActivity {
   }
 
   public void onClickTestDraw(View view) {
-    TestDrawActivity.start(this);
+    TestCustomDrawActivity.start(this);
   }
 }
