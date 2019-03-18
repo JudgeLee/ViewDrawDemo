@@ -13,16 +13,17 @@ import com.judgelee.viewdrawdemo.customdraw.activity.CobwebViewActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.PaintActivity1;
 import com.judgelee.viewdrawdemo.customdraw.activity.PathActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.PathEffectActivity;
+import com.judgelee.viewdrawdemo.customdraw.activity.XfermodeActivity;
 
 /**
  * Author: lijiajie
  * Date: 2019/3/7
  * Desc:
  */
-public class TestCustomDrawActivity extends AppCompatActivity {
+public class CustomDrawActivity extends AppCompatActivity {
 
   public static void start(Activity activity) {
-    Intent intent = new Intent(activity, TestCustomDrawActivity.class);
+    Intent intent = new Intent(activity, CustomDrawActivity.class);
     activity.startActivity(intent);
   }
 
@@ -32,7 +33,7 @@ public class TestCustomDrawActivity extends AppCompatActivity {
     setContentView(R.layout.activity_test_draw);
   }
 
-  public void onClickTestPaint1(View view) {
+  public void onClickPaint1(View view) {
     PaintActivity1.start(this);
   }
 
@@ -44,15 +45,19 @@ public class TestCustomDrawActivity extends AppCompatActivity {
     CobwebViewActivity.start(this);
   }
 
-  public void onClickTestPaint2(View view) {
+  public void onClickPaint2(View view) {
     PathEffectActivity.start(this);
   }
 
-  public void onClickTestPath(View view) {
+  public void onClickPath(View view) {
     PathActivity.start(this);
   }
 
-  public void onClickTestCanvas(View view) {
+  public void onClickCanvas(View view) {
     CanvasActivity.start(this);
+  }
+
+  public void onClickXfermode(View view) {
+    XfermodeActivity.start(this);
   }
 }

@@ -68,6 +68,10 @@ public class CanvasView extends View {
     canvas.clipRect(new Rect(350, 350, 650, 650));
     canvas.drawColor(Color.BLACK);
 
+    canvas.drawText("绘制到区域之外", 100, 100, mPaint); //无效果
+    //canvas.drawRoundRect(new RectF(100, 100, 500, 500), 80, 80, mPaint);
+    canvas.drawRoundRect(new RectF(0, 0, 500, 500), 80, 80, mPaint);
+
 
     canvas.restoreToCount(10); // 大于栈顶，无效果
     //canvas.restore();
@@ -76,7 +80,7 @@ public class CanvasView extends View {
     //canvas.restore();
     //canvas.restore();
     //canvas.restoreToCount(10);
-    canvas.drawColor(Color.GREEN);
+    //canvas.drawColor(Color.GREEN);
 
   }
 }

@@ -7,28 +7,34 @@
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:onClick="onClickTestPaint1"
-    android:text="Test Paint1" />
+    android:onClick="onClickPaint1"
+    android:text="Paint1" />
 
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:onClick="onClickTestPaint2"
-    android:text="Test Paint2" />
+    android:onClick="onClickPaint2"
+    android:text="Paint2" />
 
 
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:onClick="onClickTestPath"
-    android:text="Test Path" />
+    android:onClick="onClickPath"
+    android:text="Path" />
 
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:onClick="onClickTestCanvas"
-    android:text="Test Canvas" />
+    android:onClick="onClickCanvas"
+    android:text="Canvas" />
 
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickXfermode"
+    android:text="Xfermode" />
+ 
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
