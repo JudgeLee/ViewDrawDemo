@@ -24,7 +24,7 @@ public class PaintView1 extends View {
 
   private void init() {
     mPaint = new Paint();
-    mPaint.setTextSize(UIUtils.dp2px(getContext(), 14));
+    mPaint.setTextSize(UIUtils.dp2px(14));
   }
 
   @Override
@@ -59,7 +59,7 @@ public class PaintView1 extends View {
     mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
     canvas.drawCircle(100 + width * 2 / 3, 160, 80, mPaint);
 
-    mPaint.setStrokeWidth(UIUtils.dp2px(getContext(), 30));
+    mPaint.setStrokeWidth(UIUtils.dp2px(30));
     canvas.drawLine(300, 400, width - 300, 400, mPaint);
 
     mPaint.setStrokeCap(Paint.Cap.ROUND);
@@ -71,7 +71,7 @@ public class PaintView1 extends View {
     mPaint.reset();
     mPaint.setStyle(Paint.Style.STROKE);
     mPaint.setColor(Color.RED);
-    mPaint.setStrokeWidth(UIUtils.dp2px(getContext(), 30));
+    mPaint.setStrokeWidth(UIUtils.dp2px(30));
 
     mPaint.setStrokeJoin(Paint.Join.MITER);
     Path path1 = new Path();

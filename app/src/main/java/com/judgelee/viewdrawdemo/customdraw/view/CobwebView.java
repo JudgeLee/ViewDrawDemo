@@ -53,7 +53,7 @@ public class CobwebView extends View {
     mPoints = new ArrayList<>();
     mRegionPoints = new ArrayList<>();
 
-    mHexagonradius = UIUtils.dp2px(getContext(), 100);
+    mHexagonradius = UIUtils.dp2px(100);
     mHexagonPath = new Path();
     mHexagonPath.moveTo(mHexagonradius, 0);
     for (int i = 1; i <= 6; i++) {
@@ -84,7 +84,7 @@ public class CobwebView extends View {
   protected void onDraw(Canvas canvas) {
     super.onDraw(canvas);
 
-    canvas.translate(getWidth() / 2.0f, UIUtils.dp2px(getContext(), 200));
+    canvas.translate(getWidth() / 2.0f, UIUtils.dp2px(200));
     canvas.save();
     canvas.drawPath(mHexagonPath, mPaint);
 
@@ -104,7 +104,7 @@ public class CobwebView extends View {
 
     canvas.restore();
     mPaint.setStrokeCap(Paint.Cap.ROUND);
-    mPaint.setStrokeWidth(UIUtils.dp2px(getContext(), 6));
+    mPaint.setStrokeWidth(UIUtils.dp2px(6));
     mPaint.setColor(Color.BLACK);
     for (Point point : mRegionPoints) {
       canvas.drawPoint(point.x, point.y, mPaint);

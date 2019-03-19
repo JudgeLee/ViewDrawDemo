@@ -46,11 +46,11 @@ public class StopWatchView extends View {
     mPaint.setColor(Color.BLACK);
     mPaint.setAntiAlias(true);
     mPaint.setStrokeCap(Paint.Cap.ROUND);
-    mPaint.setStrokeWidth(UIUtils.dp2px(getContext(), 1));
+    mPaint.setStrokeWidth(UIUtils.dp2px(1));
 
     mTextPaint = new Paint(mPaint);
     mTextPaint.setStyle(Paint.Style.FILL);
-    mTextPaint.setTextSize(UIUtils.dp2px(getContext(), 14));
+    mTextPaint.setTextSize(UIUtils.dp2px(14));
     mTextPaint.setTypeface(Typeface.DEFAULT_BOLD);
 
     mThinDegreePaint = new Paint(mPaint);
@@ -59,12 +59,12 @@ public class StopWatchView extends View {
     mThickDegreePaint = new Paint(mPaint);
     mThickDegreePaint.setColor(0xFF4A4E59);
 
-    mRadius = UIUtils.dp2px(getContext(), 150);
-    mClockHandRadius = UIUtils.dp2px(getContext(), 2.5);
-    shortDegreeLength = UIUtils.dp2px(getContext(), 10);
-    mediumDegreeLength = UIUtils.dp2px(getContext(), 15);
-    mLongDegreeLength = UIUtils.dp2px(getContext(), 20);
-    mTextEnd = mRadius - mLongDegreeLength - UIUtils.dp2px(getContext(), 15);
+    mRadius = UIUtils.dp2px(150);
+    mClockHandRadius = UIUtils.dp2px(2.5);
+    shortDegreeLength = UIUtils.dp2px(10);
+    mediumDegreeLength = UIUtils.dp2px(15);
+    mLongDegreeLength = UIUtils.dp2px(20);
+    mTextEnd = mRadius - mLongDegreeLength - UIUtils.dp2px(15);
 
     mShortDegreePath = new Path();
     mShortDegreePath.moveTo(mRadius, 0);
@@ -80,7 +80,7 @@ public class StopWatchView extends View {
 
     mClockHandPath = new Path();
     mClockHandPath.moveTo(0, -mClockHandRadius);
-    mClockHandPath.lineTo(0, -mClockHandRadius - UIUtils.dp2px(getContext(), 3));
+    mClockHandPath.lineTo(0, -mClockHandRadius - UIUtils.dp2px(3));
     Path path1 = new Path();
     path1.addCircle(0, 0, mClockHandRadius, Path.Direction.CCW);
     Path path2 = new Path();
@@ -94,17 +94,17 @@ public class StopWatchView extends View {
   protected void onDraw(Canvas canvas) {
     super.onDraw(canvas);
 
-    canvas.translate(getWidth() / 2.0f, UIUtils.dp2px(getContext(), 200));
+    canvas.translate(getWidth() / 2.0f, UIUtils.dp2px(200));
 
 
     canvas.save();
-    canvas.translate(UIUtils.dp2px(getContext(), -75), UIUtils.dp2px(getContext(), -75));
+    canvas.translate(UIUtils.dp2px(-75), UIUtils.dp2px(-75));
     Path path = new Path();
-    path.addArc(new RectF(0, 0, UIUtils.dp2px(getContext(), 150), UIUtils.dp2px(getContext(), 150)), -180,360);
+    path.addArc(new RectF(0, 0, UIUtils.dp2px(150), UIUtils.dp2px(150)), -180,360);
     canvas.drawPath(path, mPaint);
 
     Paint textPaint = new Paint(mPaint);
-    textPaint.setTextSize(UIUtils.dp2px(getContext(), 20));
+    textPaint.setTextSize(UIUtils.dp2px(20));
     textPaint.setStyle(Paint.Style.FILL);
     textPaint.setColor(Color.BLACK);
     textPaint.setTextAlign(Paint.Align.CENTER);

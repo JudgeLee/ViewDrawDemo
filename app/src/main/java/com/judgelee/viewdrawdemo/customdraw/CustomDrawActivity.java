@@ -13,6 +13,7 @@ import com.judgelee.viewdrawdemo.customdraw.activity.CobwebViewActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.PaintActivity1;
 import com.judgelee.viewdrawdemo.customdraw.activity.PathActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.PathEffectActivity;
+import com.judgelee.viewdrawdemo.customdraw.activity.ShaderActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.XfermodeActivity;
 
 /**
@@ -59,5 +60,9 @@ public class CustomDrawActivity extends AppCompatActivity {
 
   public void onClickXfermode(View view) {
     XfermodeActivity.start(this);
+  }
+
+  public void onClickShader(View view) {
+    ShaderActivity.start(this);
   }
 }

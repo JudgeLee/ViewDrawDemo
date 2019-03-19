@@ -36,6 +36,8 @@ public class PathView extends View {
 
     canvas.drawLine(800, 0, 800, 400, mPaint);
     canvas.drawLine(600, 200, 1000, 200, mPaint);
+    canvas.drawLine(0, 500, 1070, 500, mPaint);
+
 
     canvas.save();
     //canvas.translate(500, 500);
