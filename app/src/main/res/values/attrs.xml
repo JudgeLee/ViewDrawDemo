@@ -46,5 +46,9 @@
 
     <attr format="boolean" name="measureWithLargestChild" />
   </declare-styleable>
+  <declare-styleable name="TestCustomView">
+    <attr name="src" format="reference" />
+  </declare-styleable>
+
 
 </resources>

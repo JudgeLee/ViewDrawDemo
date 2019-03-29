@@ -7,21 +7,20 @@
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:onClick="onClickPaint1"
-    android:text="Paint1" />
-
-  <Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:onClick="onClickPaint2"
-    android:text="Paint2" />
-
+    android:onClick="onClickPaint"
+    android:text="Paint" />
 
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="onClickPath"
     android:text="Path" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickPathEffect"
+    android:text="Path Effect" />
 
   <Button
     android:layout_width="match_parent"
@@ -38,9 +37,16 @@
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:onClick="onClickLayer"
+    android:text="Layer" />
+
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:onClick="onClickXfermode"
     android:text="Xfermode" />
- 
+
   <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -53,4 +59,9 @@
     android:onClick="onClickCobweb"
     android:text="Cobweb View" />
 
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickTestCustomView"
+    android:text="Test Custom View" />
 </LinearLayout>

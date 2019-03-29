@@ -3,9 +3,14 @@ package com.judgelee.viewdrawdemo.customdraw.view;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.ColorMatrixColorFilter;
+import android.graphics.LightingColorFilter;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.view.View;
+import com.judgelee.viewdrawdemo.R;
 import com.judgelee.viewdrawdemo.utils.UIUtils;
 
 /**
@@ -13,11 +18,11 @@ import com.judgelee.viewdrawdemo.utils.UIUtils;
  * Date: 2019/3/7
  * Desc:
  */
-public class PaintView1 extends View {
+public class PaintView extends View {
 
   private Paint mPaint;
 
-  public PaintView1(Context context) {
+  public PaintView(Context context) {
     super(context);
     init();
   }
@@ -32,6 +37,17 @@ public class PaintView1 extends View {
     super.onDraw(canvas);
 
     int width = getWidth();
+
+    Paint testPaint = new Paint();
+    testPaint.setStyle(Paint.Style.STROKE);
+    testPaint.setStrokeWidth(300);
+    canvas.drawLine(100, 300, 500, 300, testPaint);
+
+    mPaint.setColor(Color.RED);
+    testPaint.setStrokeWidth(5);
+    canvas.drawLine(0, 150, 1000, 150, testPaint);
+    canvas.drawLine(0, 450, 1000, 450, testPaint);
+    canvas.drawLine(0, 300, 1000, 300, testPaint);
 
     mPaint.setColor(Color.BLACK);
     canvas.drawText("STYLE.FILL", 20, 50, mPaint);
@@ -98,9 +114,9 @@ public class PaintView1 extends View {
     mPaint.setStrokeWidth(1);
     Path complexPath = new Path();
     Path tempPath = new Path();
-    tempPath.moveTo(50, 1300);
-    tempPath.lineTo(300, 1500);
-    complexPath.addCircle(200, 1400, 100, Path.Direction.CW);
+    tempPath.moveTo(50, 1200);
+    tempPath.lineTo(300, 1400);
+    complexPath.addCircle(200, 1300, 100, Path.Direction.CW);
     complexPath.addPath(tempPath);
     canvas.drawPath(complexPath, mPaint);
 
@@ -108,5 +124,33 @@ public class PaintView1 extends View {
     mPaint.setStyle(Paint.Style.FILL);
     canvas.drawPath(complexPath, mPaint);
 
+    // ColorFilter
+    canvas.translate(-500, 0);
+    canvas.save();
+    canvas.translate(0, 1400);
+    canvas.drawBitmap(UIUtils.createBitmap(R.drawable.road_sky), 0, 0, mPaint);
+    canvas.translate(300, 0);
+    mPaint.setColorFilter(new ColorMatrixColorFilter(new float[] {
+        0.33F, 0.59F, 0.11F, 0, 0,
+        0.33F, 0.59F, 0.11F, 0, 0,
+        0.33F, 0.59F, 0.11F, 0, 0,
+        0, 0, 0, 1, 0,
+    }));
+    canvas.drawBitmap(UIUtils.createBitmap(R.drawable.road_sky), 0, 0, mPaint);
+
+    canvas.translate(300, 0);
+    mPaint.setColorFilter(new LightingColorFilter(0xFFFFFF00, 0x0000000));
+    canvas.drawBitmap(UIUtils.createBitmap(R.drawable.road_sky), 0, 0, mPaint);
+
+    canvas.translate(-600, 200);
+    mPaint.setColor(Color.BLUE);
+    mPaint.setColorFilter(new PorterDuffColorFilter(0xFFFF0000, PorterDuff.Mode.DARKEN));
+    canvas.drawBitmap(UIUtils.createBitmap(R.drawable.road_sky), 0, 0, mPaint);
+    canvas.translate(300, 0);
+    mPaint.setStyle(Paint.Style.FILL);
+    canvas.drawCircle(100, 100, 100, mPaint);
+
+
   }
+
 }

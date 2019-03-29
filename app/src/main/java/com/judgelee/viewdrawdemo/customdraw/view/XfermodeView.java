@@ -127,6 +127,7 @@ public class XfermodeView extends View {
       paint.setShader(mBG);
       canvas.drawRect(x, y, x + W, y + H, paint);
 
+      //canvas.save();
       // draw the src/dst example into our offscreen bitmap
       int sc = canvas.saveLayer(x, y, x + W, y + H, null);
       canvas.translate(x, y);
@@ -135,6 +136,7 @@ public class XfermodeView extends View {
       canvas.drawBitmap(mSrcB, 0, 0, paint);
       paint.setXfermode(null);
       canvas.restoreToCount(sc);
+      //canvas.restore();
 
       // draw the label
       canvas.drawText(sLabels[i],

@@ -10,10 +10,12 @@ import com.judgelee.viewdrawdemo.R;
 import com.judgelee.viewdrawdemo.customdraw.activity.CanvasActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.ClockViewActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.CobwebViewActivity;
-import com.judgelee.viewdrawdemo.customdraw.activity.PaintActivity1;
+import com.judgelee.viewdrawdemo.customdraw.activity.LayerActivity;
+import com.judgelee.viewdrawdemo.customdraw.activity.PaintActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.PathActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.PathEffectActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.ShaderActivity;
+import com.judgelee.viewdrawdemo.customdraw.activity.TestCustomViewActivity;
 import com.judgelee.viewdrawdemo.customdraw.activity.XfermodeActivity;
 
 /**
@@ -34,8 +36,8 @@ public class CustomDrawActivity extends AppCompatActivity {
     setContentView(R.layout.activity_test_draw);
   }
 
-  public void onClickPaint1(View view) {
-    PaintActivity1.start(this);
+  public void onClickPaint(View view) {
+    PaintActivity.start(this);
   }
 
   public void onClickDrawClock(View view) {
@@ -46,7 +48,7 @@ public class CustomDrawActivity extends AppCompatActivity {
     CobwebViewActivity.start(this);
   }
 
-  public void onClickPaint2(View view) {
+  public void onClickPathEffect(View view) {
     PathEffectActivity.start(this);
   }
 
@@ -64,5 +66,13 @@ public class CustomDrawActivity extends AppCompatActivity {
 
   public void onClickShader(View view) {
     ShaderActivity.start(this);
+  }
+
+  public void onClickTestCustomView(View view) {
+    TestCustomViewActivity.start(this);
+  }
+
+  public void onClickLayer(View view) {
+    LayerActivity.start(this);
   }
 }

@@ -3,6 +3,7 @@ package com.judgelee.viewdrawdemo.customdraw.view;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
@@ -48,7 +49,7 @@ public class CanvasView extends View {
     Random random = new Random();
     while (regionIterator.next(rect)) {
       mPaint.setColor(Color.rgb(random.nextInt(256), random.nextInt(256), random.nextInt(256)));
-      //canvas.drawRect(rect, mPaint);
+      canvas.drawRect(rect, mPaint);
     }
 
     canvas.save();
@@ -81,6 +82,10 @@ public class CanvasView extends View {
     //canvas.restore();
     //canvas.restoreToCount(10);
     //canvas.drawColor(Color.GREEN);
+
+    Matrix matrix = new Matrix();
+    matrix.preTranslate(2, 2); // M' = M * T(2, 2)
+    matrix.postRotate(30, 2, 2); // M' = R(30, 2, 2) * M
 
   }
 }
